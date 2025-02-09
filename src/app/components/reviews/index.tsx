@@ -44,7 +44,7 @@ const reviews = [
 
 const Reviews = () => {
     return (
-        <div className="p-4 flex flex-col space-y-4 w-full mt-6">
+        <div className="p-4 flex flex-col space-y-4 w-full mt-6 mb-6">
             <div className="text-center">
                 <p className="text-[#F85E9F] font-semibold text-base">
                     CUSTOMER REVIEWS

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Header = () => {
     return (
         <div className="flex flex-col md:flex-row items-center justify-between bg-white md:mt-16 p-4">
-            <div className="w-full md:w-2/5 p-2 m-4 md:m-16">
+            <div className="w-full md:w-2/5 p-2 m-4 md:m-16 ">
                 <div className="flex items-center space-x-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left">
                         Travel <span className="text-orange-600">top</span> <span className="text-orange-600 md:block">destination</span> of the world
@@ -12,7 +12,7 @@ const Header = () => {
                 </div>
                 <p className="mt-4 text-base md:text-lg text-center md:text-left">Where adventure meets comfort. We create unforgettable travel experiences</p>
 
-                <div className="mt-8 flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start space-x-4 ">
+                <div className="mt-8 mb-4 flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start space-x-4 ">
                     <Button >
                         Get Started
                     </Button>

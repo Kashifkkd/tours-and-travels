@@ -1,3 +1,4 @@
+import Categories from "./components/categories";
 import Header from "./components/header";
 import Destinations from "./components/home/destinations";
 import Features from "./components/home/features";
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <Destinations />
       <MoreFeatures />
+      <Categories />
       <Reviews />
       <Newsletter />
     </div>

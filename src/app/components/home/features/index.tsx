@@ -27,7 +27,7 @@ const Features: React.FC = () => {
     ];
 
     return (
-        <div className="p-4 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 w-full">
+        <div className="px-4 py-8 mt-8 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 w-full bg-orange-50">
             <div className='flex flex-col items-center md:items-start space-y-1 md:space-y-2 md:ml-[5%]'>
                 <p className="text-[#F85E9F] font-semibold text-sm">
                     WHAT WE SERVE
@@ -40,7 +40,7 @@ const Features: React.FC = () => {
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly w-full space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly w-full space-y-12 md:space-y-0">
                 {featuresList.map((feature, index) => (
                     <FeatureBox key={index} title={feature.title} image={feature.image} description={feature.description} />
                 ))}
@@ -57,14 +57,18 @@ type FeatureBoxProps = {
     description: string;
 }
 
-export const FeatureBox: React.FC<FeatureBoxProps> = ({ title, image, description }) => {
+export const FeatureBox: React.FC<FeatureBoxProps> = ({
+    title,
+    image,
+    //   description 
+}) => {
     return (
         <div className="flex flex-col items-center space-y-4 w-auto md:w-full">
             <Image src={image} alt="feature" width={60} height={60} className='object-contain' />
             <p className="text-[#191825] font-semibold text-2xl">{title}</p>
-            <p className='font-medium text-sm text-[#191825]'>
+            {/* <p className='font-medium text-sm text-[#191825]'>
                 {description}
-            </p>
+            </p> */}
         </div>
     );
 }

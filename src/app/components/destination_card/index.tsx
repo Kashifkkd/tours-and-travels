@@ -29,7 +29,7 @@ const DestinationCard = ({ location, rating, name, price, description, image }: 
                 </div>
                 <p className="text-gray-700 text-base mb-4">{description}</p>
                 <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold text-gray-900">${price}</span>
+                    <span className="text-xl font-bold text-gray-900">₹{price}</span>
                     <Button>Book Now</Button>
                     {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Book Now
