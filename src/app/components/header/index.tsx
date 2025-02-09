@@ -1,0 +1,37 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
+const Header = () => {
+    return (
+        <div className="flex flex-col md:flex-row items-center justify-between bg-white md:mt-16 p-4">
+            <div className="w-full md:w-2/5 p-2 m-4 md:m-16">
+                <div className="flex items-center space-x-4">
+                    <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left">
+                        Travel <span className="text-orange-600">top</span> <span className="text-orange-600 md:block">destination</span> of the world
+                    </h1>
+                </div>
+                <p className="mt-4 text-base md:text-lg text-center md:text-left">Where adventure meets comfort. We create unforgettable travel experiences</p>
+
+                <div className="mt-8 flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start space-x-4 ">
+                    <Button >
+                        Get Started
+                    </Button>
+                    <Button variant="secondary">
+                        Contact Us
+                    </Button>
+                </div>
+            </div>
+            <div className="w-full md:w-3/5">
+                <Image
+                    src="/header_image_3.png"
+                    alt="header-img"
+                    width={800}
+                    height={800}
+                    className="mix-blend-normal object-cover"
+                />
+            </div>
+        </div>
+    );
+}
+
+export default Header;
