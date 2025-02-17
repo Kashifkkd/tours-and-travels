@@ -1,7 +1,15 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
+
+    const handleScroll = () => {
+        window.scrollBy({ top: 1297, behavior: 'smooth' });
+    };
+
     return (
         <div className="flex flex-col md:flex-row items-center justify-between bg-white md:mt-16 p-4">
             <div className="w-full md:w-2/5 p-2 m-4 md:m-16 ">
@@ -13,12 +21,14 @@ const Header = () => {
                 <p className="mt-4 text-base md:text-lg text-center md:text-left">Where adventure meets comfort. We create unforgettable travel experiences</p>
 
                 <div className="mt-8 mb-4 flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start space-x-4 ">
-                    <Button >
+                    <Button onClick={handleScroll}>
                         Get Started
                     </Button>
-                    <Button variant="secondary">
-                        Contact Us
-                    </Button>
+                    <Link href="tel:+918655733476" passHref>
+                        <Button variant="secondary">
+                            Contact Us
+                        </Button>
+                    </Link>
                 </div>
             </div>
             <div className="w-full md:w-3/5">

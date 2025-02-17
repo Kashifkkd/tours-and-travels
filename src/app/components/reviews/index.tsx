@@ -6,39 +6,70 @@ import Image from 'next/image';
 
 
 const reviews = [
+    // Reviews for Muslim Pilgrimage Services (Umrah/Hajj)
     {
-        name: "John Doe",
+        name: "Ayesha Khan",
         rating: 5,
-        comment: "Amazing experience! Highly recommend.",
-        image: "/person_image.jpg"
+        comment: "The Umrah package was excellent! The flights were comfortable, and the hotels were very close to Masjid al-Haram. Highly recommend!",
+        image: "/user.jpg"
     },
     {
-        name: "Jane Smith",
+        name: "Omar Abdullah",
         rating: 4,
-        comment: "Great service and friendly staff.",
-        image: "/person_image.jpg"
-
+        comment: "The Hajj package was well-organized, but the flight delays were a bit inconvenient. Otherwise, everything was perfect.",
+        image: "/user.jpg"
     },
     {
-        name: "Sam Wilson",
+        name: "Fatima Zahra",
         rating: 5,
-        comment: "A trip to remember! Everything was perfect.",
-        image: "/person_image.jpg"
-
+        comment: "This was my first Umrah, and the team made it so special. The flights were on time, and the accommodations were luxurious.",
+        image: "/user.jpg"
     },
     {
-        name: "Lisa Brown",
+        name: "Yusuf Rahman",
+        rating: 5,
+        comment: "The entire Hajj experience was seamless. The flights were comfortable, and the staff was very supportive. Thank you!",
+        image: "/user.jpg"
+    },
+
+    // Reviews for Non-Muslim Flight Services
+    {
+        name: "Emily Johnson",
+        rating: 5,
+        comment: "The flight booking process was smooth, and the customer service team was very helpful. Will definitely use this service again!",
+        image: "/user.jpg"
+    },
+    {
+        name: "David Smith",
         rating: 4,
-        comment: "Good value for money. Will book again.",
-        image: "/person_image.jpg"
-
+        comment: "Great flight options at affordable prices. The only issue was a slight delay, but overall, it was a good experience.",
+        image: "/user.jpg"
     },
     {
-        name: "Michael Johnson",
+        name: "Sophia Lee",
         rating: 5,
-        comment: "Exceptional service and beautiful destinations.",
-        image: "/person_image.jpg"
+        comment: "I booked a last-minute flight, and everything went perfectly. The staff was very accommodating, and the flight was comfortable.",
+        image: "/user.jpg"
+    },
+    {
+        name: "Michael Brown",
+        rating: 4,
+        comment: "The flight service was good, but the in-flight meals could be improved. Otherwise, it was a pleasant journey.",
+        image: "/user.jpg"
+    },
 
+    // Mixed Reviews for General Travel Services
+    {
+        name: "Priya Sharma",
+        rating: 5,
+        comment: "I booked a family holiday package, and the flights were excellent. The team took care of everything, making our trip stress-free.",
+        image: "/user.jpg"
+    },
+    {
+        name: "Abdul Malik",
+        rating: 4,
+        comment: "The flight booking was easy, but the return flight was delayed. Otherwise, the service was good.",
+        image: "/user.jpg"
     }
 ];
 

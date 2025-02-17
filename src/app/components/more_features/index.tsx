@@ -2,10 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 
 const cardData = [
-    { label: '4k+', description: 'Customers' },
-    { label: '1000+', description: 'Destinations' },
-    { label: '24/7', description: 'Support' },
-    { label: '100%', description: 'Dedication' },
+    { label: '1k+', description: 'Customers' },
+    { label: '10+', description: 'Services' },
+    { label: '100+', description: 'Hotels' },
+    { label: '24/7*', description: 'Support' },
 ];
 
 const MoreFeatures = () => {
@@ -13,12 +13,12 @@ const MoreFeatures = () => {
         <div className="bg-white py-16 px-8 md:px-16 lg:px-32 text-gray-800">
             <div className="flex flex-col lg:flex-row items-center md:mb-0 mb-12">
                 <div className="relative w-full h-80 lg:w-80 lg:h-80 mb-6 lg:mb-0 lg:mr-8">
-                    <Image 
-                        src="/features.png" 
-                        alt="Travel" 
+                    <Image
+                        src="/features.png"
+                        alt="Travel"
                         layout="fill"
                         objectFit="contain"
-                        // className="rounded-lg shadow-lg"
+                    // className="rounded-lg shadow-lg"
                     />
                 </div>
                 <div className="text-center lg:text-left">
