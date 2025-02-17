@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { AtSymbolIcon, Bars3Icon, PhoneIcon, UserIcon } from '@heroicons/react/24/solid';
 import {
     Drawer,
+    DrawerClose,
     DrawerContent,
     DrawerHeader,
     DrawerTrigger,
@@ -14,7 +15,7 @@ const Navbar = () => {
     const [activeItem, setActiveItem] = useState("home");
 
     const navbarItems = [
-        { value: "home", label: "Home" },
+        { value: "", label: "Home" },
         { value: "about", label: "About" },
         { value: "services", label: "Services" },
     ];
@@ -33,28 +34,24 @@ const Navbar = () => {
                     </DrawerTrigger>
                     <DrawerContent className="fixed inset-0 bg-white z-50 h-screen">
                         <DrawerHeader className="flex justify-between items-center p-4">
-                            {/* <DrawerClose asChild>
-                                <button className="text-2xl">
-                                    <Bars3Icon className="h-6 w-6" />
-                                </button>
-                            </DrawerClose> */}
                         </DrawerHeader>
                         <div className="flex flex-col items-center justify-between h-full p-4 space-y-6">
                             {/* Navigation Links */}
                             <div className="flex flex-col items-center space-y-4 w-full">
                                 {navbarItems.map((item) => (
-                                    <Link
-                                        key={item.value}
-                                        href={`/${item.value}`}
-                                        className={`text-2xl hover:underline ${activeItem === item.value
-                                            ? 'text-[#222831] font-bold'
-                                            : 'text-[rgba(25, 24, 37, 0.75)]'
-                                            }`}
-                                        onClick={() => setActiveItem(item.value)}
-                                        aria-current={activeItem === item.value ? 'page' : undefined}
-                                    >
-                                        {item.label}
-                                    </Link>
+                                    <DrawerClose asChild key={item.value}>
+                                        <Link
+                                            href={`/${item.value}`}
+                                            className={`text-2xl hover:underline ${activeItem === item.value
+                                                ? 'text-[#222831] font-bold'
+                                                : 'text-[rgba(25, 24, 37, 0.75)]'
+                                                }`}
+                                            onClick={() => setActiveItem(item.value)}
+                                            aria-current={activeItem === item.value ? 'page' : undefined}
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    </DrawerClose>
                                 ))}
                             </div>
 
