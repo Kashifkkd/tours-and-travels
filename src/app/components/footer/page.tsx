@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { AtSymbolIcon, PhoneIcon, UserIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -11,16 +12,44 @@ const Footer = () => {
                         <h1 className="text-3xl font-bold">Global Tours & Travels</h1>
                         <p className="mt-2 text-gray-600">Explore the world with us.</p>
                         <div className="flex space-x-6 mt-4">
-                            <a href="#" className="text-gray-600 hover:text-gray-800">
-                                <Image src="/instagram_logo.svg" alt="Instagram" width={24} height={24} />
-                            </a>
-                            <a href="#" className="text-gray-600 hover:text-gray-800">
-                                <Image src="/youtube_logo.svg" alt="Youtube" width={24} height={24} />
-                            </a>
-                            <a href="#" className="text-gray-600 hover:text-gray-800">
-                                <Image src="/messenger-logo.svg" alt="Facebook" width={24} height={24} />
-                            </a>
+                            <Link
+                                href="https://wa.me/918655733476"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 hover:text-gray-800"
+                            >
+                                <Image src="/whatsapp_logo.svg" alt="Whatsapp" width={24} height={24} />
+                            </Link>
 
+                            {/* Instagram */}
+                            <Link
+                                href="https://www.instagram.com/globaltoursandtravels_2023"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 hover:text-gray-800"
+                            >
+                                <Image src="/instagram_logo.svg" alt="Instagram" width={24} height={24} />
+                            </Link>
+
+                            {/* YouTube */}
+                            <Link
+                                href="https://www.youtube.com/@GLOBALToursAndTravelByFaizan"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 hover:text-gray-800"
+                            >
+                                <Image src="/youtube_logo.svg" alt="Youtube" width={24} height={24} />
+                            </Link>
+
+                            {/* Facebook Messenger (if applicable) */}
+                            <Link
+                                href="https://m.me/your-facebook-page" // Replace with your actual Facebook Messenger link
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-600 hover:text-gray-800"
+                            >
+                                <Image src="/messenger-logo.svg" alt="Facebook Messenger" width={24} height={24} />
+                            </Link>
                         </div>
                     </div>
                     <div className="md:w-1/3">

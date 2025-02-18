@@ -15,7 +15,7 @@ const Navbar = () => {
     const [activeItem, setActiveItem] = useState("home");
 
     const navbarItems = [
-        { value: "", label: "Home" },
+        { value: "/", label: "Home" },
         { value: "about", label: "About" },
         { value: "services", label: "Services" },
     ];
@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className="flex flex-col md:flex-row items-center justify-between p-4 bg-white text-black">
             <div className="flex items-center justify-between w-full md:w-auto">
-                <Link href="/">
+                <Link href="/" className='ml-8'>
                     <Image src="/logo.png" alt="Logo" width={60} height={60} />
                 </Link>
                 <Drawer>
@@ -96,17 +96,29 @@ const Navbar = () => {
                     </DrawerContent>
                 </Drawer>
             </div>
-            <div className="hidden md:flex space-x-8">
-                {navbarItems.map(item => (
-                    <a
-                        key={item.value}
-                        href={`#${item.value}`}
-                        className={`hover:underline text-base ${activeItem === item.value ? 'text-[#222831] font-bold' : 'text-[rgba(25, 24, 37, 0.75)]'}`}
-                        onClick={() => setActiveItem(item.value)}
-                    >
-                        {item.label}
-                    </a>
-                ))}
+            <div className="hidden md:flex space-x-8 mr-8">
+                {navbarItems.map((item) => {
+                    const isSelected = activeItem === item.value;
+                    const isHomePage = item.value === '/' ; // Check if it's the home page
+
+                    return (
+                        <Link
+                            key={item.value}
+                            href={isHomePage ? '/' : `/${item.value}`}
+                            className={`relative text-xl transition-all duration-300 ${isSelected
+                                ? 'text-[#222831] font-semibold'
+                                : 'text-[rgba(25, 24, 37, 0.75)] hover:text-[#222831]'
+                                }`}
+                            onClick={() => setActiveItem(item.value)}
+                        >
+                            {item.label}
+                            <span
+                                className={`absolute left-0 -bottom-1 h-0.5 bg-[#222831] transition-all duration-300 ${isSelected ? 'w-full' : 'w-0 hover:w-full'
+                                    }`}
+                            ></span>
+                        </Link>
+                    );
+                })}
             </div>
         </nav>
     );

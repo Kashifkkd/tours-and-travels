@@ -18,7 +18,7 @@ const Header = () => {
                         Travel <span className="text-orange-600">top</span> <span className="text-orange-600 md:block">destination</span> of the world
                     </h1>
                 </div>
-                <p className="mt-4 text-base md:text-lg text-center md:text-left">Where adventure meets comfort. We create unforgettable travel experiences</p>
+                <p className="mt-4 text-base md:text-lg text-center md:text-left">From travel adventures to premium services, we make every moment unforgettable.</p>
 
                 <div className="mt-8 mb-4 flex flex-row md:flex-row items-center md:items-start justify-center md:justify-start space-x-4 ">
                     <Button onClick={handleScroll}>

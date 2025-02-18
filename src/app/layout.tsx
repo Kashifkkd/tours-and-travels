@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Foooter from "./components/footer/page";
-
 import { Poppins } from 'next/font/google';
 import Navbar from "./components/navbar/page";
+// import DeveloperFooter from "./components/developer_footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -32,6 +32,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Foooter />
+        {/* <DeveloperFooter /> */}
       </body>
     </html>
   );
