@@ -28,8 +28,8 @@ const Navbar = () => {
                 </Link>
                 <Drawer>
                     <DrawerTrigger asChild>
-                        <button className="md:hidden text-2xl">
-                            <Bars3Icon className="h-6 w-6" />
+                        <button className="md:hidden text-3xl">
+                            <Bars3Icon className="h-10 w-10"/>
                         </button>
                     </DrawerTrigger>
                     <DrawerContent className="fixed inset-0 bg-white z-50 h-screen">
