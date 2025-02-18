@@ -14,8 +14,11 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center justify-between bg-white md:mt-16 p-4">
             <div className="w-full md:w-2/5 p-2 m-4 md:m-16 ">
                 <div className="flex items-center space-x-4">
-                    <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left">
+                    {/* <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left">
                         Travel <span className="text-orange-600">top</span> <span className="text-orange-600 md:block">destination</span> of the world
+                    </h1> */}
+                    <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left">
+                        Travel <span className="text-orange-600">Top</span> <span className="text-orange-600 md:block">Destinations</span> & get<span className="text-orange-600"> Best Services</span>
                     </h1>
                 </div>
                 <p className="mt-4 text-base md:text-lg text-center md:text-left">From travel adventures to premium services, we make every moment unforgettable.</p>
