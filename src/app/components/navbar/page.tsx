@@ -60,7 +60,7 @@ const Navbar = () => {
                                 <h2 className="text-xl font-bold mb-4">Contact Us</h2>
 
                                 {/* Contact Details */}
-                                <div className="space-y-3">
+                                <div className="space-y-3 mb-16">
                                     <div className="flex items-center justify-center">
                                         <UserIcon className="h-6 w-6 text-gray-600 mr-2" />
                                         <span className="text-gray-600">Faizan Purkar</span>
