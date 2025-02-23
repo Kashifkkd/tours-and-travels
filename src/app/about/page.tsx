@@ -9,7 +9,7 @@ const About = () => {
                 <h1 className="text-4xl font-bold mb-4">Global Tours & Travels</h1>
                 <div className="relative w-40 h-40 mx-auto mb-4">
                     <Image
-                        src="/logo.png"
+                        src="/toursandtravelslogo.jpg"
                         alt="Global Tours and Travels"
                         layout="fill"
                         objectFit="contain"
@@ -30,7 +30,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center justify-center">
                     <AtSymbolIcon className="h-6 w-6 text-gray-600 mr-2" />
-                    <a href="mailto:info@globaltours.com" className="text-gray-700 hover:text-gray-900">info@globaltours.com</a>
+                    <a href="mailto:globaltoursandtravel@gmail.com" className="text-gray-700 hover:text-gray-900">globaltoursandtravel@gmail.com                    </a>
                 </div>
             </div>
         </div>

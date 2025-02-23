@@ -24,12 +24,12 @@ const Navbar = () => {
         <nav className="flex flex-col md:flex-row items-center justify-between p-4 bg-white text-black">
             <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/" className='ml-5'>
-                    <Image src="/logo.png" alt="Logo" width={60} height={60} />
+                    <Image src="/toursandtravelslogo.jpg" alt="Logo" width={60} height={60} />
                 </Link>
                 <Drawer>
                     <DrawerTrigger asChild>
                         <button className="md:hidden text-3xl">
-                            <Bars3Icon className="h-10 w-10"/>
+                            <Bars3Icon className="h-10 w-10" />
                         </button>
                     </DrawerTrigger>
                     <DrawerContent className="fixed inset-0 bg-white z-50 h-screen">
@@ -68,10 +68,10 @@ const Navbar = () => {
                                     <div className="flex items-center justify-center">
                                         <AtSymbolIcon className="h-6 w-6 text-gray-600 mr-2" />
                                         <a
-                                            href="mailto:info@globaltours.com"
+                                            href="mailto:globaltoursandtravel@gmail.com"
                                             className="text-gray-600 hover:text-gray-800 transition-colors"
                                         >
-                                            info@globaltours.com
+                                            globaltoursandtravel@gmail.com
                                         </a>
                                     </div>
                                     <div className="flex items-center justify-center">
@@ -99,7 +99,7 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-8 mr-8">
                 {navbarItems.map((item) => {
                     const isSelected = activeItem === item.value;
-                    const isHomePage = item.value === '/' ; // Check if it's the home page
+                    const isHomePage = item.value === '/'; // Check if it's the home page
 
                     return (
                         <Link

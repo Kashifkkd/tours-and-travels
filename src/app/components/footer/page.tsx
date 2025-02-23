@@ -41,9 +41,8 @@ const Footer = () => {
                                 <Image src="/youtube_logo.svg" alt="Youtube" width={24} height={24} />
                             </Link>
 
-                            {/* Facebook Messenger (if applicable) */}
                             <Link
-                                href="https://m.me/your-facebook-page" // Replace with your actual Facebook Messenger link
+                                href="https://www.facebook.com/share/15iF3RBkL5/?mibextid=wwXIfr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-600 hover:text-gray-800"
@@ -60,7 +59,8 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center mb-2">
                             <AtSymbolIcon className="h-6 w-6 text-gray-600 mr-2" />
-                            <a href="mailto:info@globaltours.com" className="text-gray-600 hover:text-gray-800">info@globaltours.com</a>
+                            <a href="mailto:globaltoursandtravel@gmail.com" className="text-gray-600 hover:text-gray-800">globaltoursandtravel@gmail.com
+                            </a>
                         </div>
                         <div className="flex items-center">
                             <PhoneIcon className="h-5 w-5 text-gray-600 mr-2 ml-[3px]" />

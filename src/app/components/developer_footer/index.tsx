@@ -17,7 +17,7 @@ const DeveloperFooter = () => {
                         </div>
                         <div className="flex items-center space-x-2">
                             <AtSymbolIcon className="h-6 w-6 text-gray-400" />
-                            <a href="mailto:info@globaltours.com" className="text-gray-400 hover:text-white transition-colors">kashifdeshmukh786@gmail.com</a>
+                            <a href="mailto:kashifdeshmukh786@gmail.com" className="text-gray-400 hover:text-white transition-colors">kashifdeshmukh786@gmail.com</a>
                         </div>
                         <div className="flex items-center space-x-2">
                             <PhoneIcon className="h-6 w-6 text-gray-400" />
